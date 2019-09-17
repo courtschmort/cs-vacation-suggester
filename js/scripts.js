@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $(".type").click(function() {
     let type = $("input:radio[name=type]:checked").val();
     if (type === "one-way") {
@@ -9,16 +10,12 @@ $(document).ready(function() {
   });
 
   $("form").submit(function(event) {
-    let firstNameInput = $("input#firstName").val();
-    let lastNameInput = $("input#lastName").val();
-    $(".firstName").text(firstNameInput);
-    $(".lastName").text(lastNameInput);
-    if(firstNameInput==="") {
-      alert("Your first name is required.")
-    }
-    if(lastNameInput==="") {
-      alert("Your last name is required.")
-    }
+    let firstNameInput = $("input#first-name").val();
+    let lastNameInput = $("input#last-name").val();
+    $(".first-name").text(firstNameInput);
+    $(".last-name").text(lastNameInput);
+    
+
 
     $("#results").show();
     let elmnt = document.getElementById("results");
@@ -26,4 +23,5 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
 });
