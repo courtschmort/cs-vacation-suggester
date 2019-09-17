@@ -1,6 +1,14 @@
 $(document).ready(function() {
-  $("form").submit(function(event) {
+  $(".type").click(function() {
+    let type = $("input:radio[name=type]:checked").val();
+    if (type === "one-way") {
+        $("#return-date").hide();
+      } else {
+        $("#return-date").show();
+      }
+  });
 
+  $("form").submit(function(event) {
     let firstNameInput = $("input#firstName").val();
     let lastNameInput = $("input#lastName").val();
     $(".firstName").text(firstNameInput);
