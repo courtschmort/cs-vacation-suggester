@@ -31,11 +31,11 @@
 
         <div class="contact-information">
           <h4>Your contact information:</h4>
-          <label for="firstName">Name</label>
+          <label for="fullName">Name</label>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input type="name" class="form-control" id="lastName" placeholder="First Name">
+                <input type="name" class="form-control" id="firstName" placeholder="First Name">
               </div>
             </div>
             <div class="col-md-6">
@@ -50,14 +50,28 @@
           </div>
         </div>
 
-        <div class="travel-dates">
+        <div class="travel-information">
           <h4>When would you like to travel?</h4>
+          <div class="travel-options">
+            <div class="radio">
+              <label>
+                <input type="radio" name="travel-options" value="roundtrip" checked>
+                Roundtrip
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="travel-options" value="one-way">
+                One-way
+              </label>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-6">
               <div class="card">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="depart-date">Depart date:</label>
+                    <label for="depart-date">Depart on:</label>
                     <input id="depart-date" class="form-control" type="date">
                   </div>
                 </div>
@@ -67,7 +81,7 @@
               <div class="card">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="return-date">Return date:</label>
+                    <label for="return-date">Return on:</label>
                     <input id="return-date" class="form-control" type="date">
                   </div>
                 </div>
@@ -76,18 +90,59 @@
           </div>
         </div>
 
-        <div class="weather">
+        <div class="climate">
           <h4>What's your preferred climate?</h4>
-          <div class="radio">
+          <select class="form-control" id="climate">
+            <option value="tropical">Tropical</option>
+            <option value="dry">Dry</option>
+            <option value="temperate">Temperate</option>
+            <option value="continental">Continental</option>
+            <option value="polar">Polar</option>
+          </select>
+          <!-- <div class="radio">
             <label>
-              <input type="radio" name="weather" value="Hot" checked>
-              Hot
+              <input type="radio" name="climate" value="tropical" checked>
+              Tropical
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="weather" value="Cold">
-              Cold
+              <input type="radio" name="climate" value="dry">
+              Dry
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="climate" value="temperate">
+              Temperate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="climate" value="continental">
+              Continental
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="climate" value="Polar">
+              Polar
+            </label>
+          </div> -->
+        </div>
+
+        <div class="activity">
+          <h4>Would you rather:</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="activity" value="explore" checked>
+              Explore
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="activity" value="relax">
+              Relax
             </label>
           </div>
         </div>
@@ -97,7 +152,7 @@
       </form>
 
       <div id="results">
-        <p>You should go to:</p>
+        <p><em>Bon voyage</em>, <span class="firstName"></span> <span class="lastName"></span>! You should go to:</p>
         <h4>Destination</h4>
         <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Destination"> -->
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut diam quam nulla porttitor massa id. Mollis aliquam ut porttitor leo a diam sollicitudin tempor id.</p>

@@ -7,8 +7,20 @@ body {
   margin: 2rem 0;
 }
 
+.travel-options {
+  margin-bottom: .5rem;
+}
+
 .card {
   margin-bottom: 1rem;
+}
+
+#climate {
+  margin-bottom: 1rem;
+}
+
+.activity {
+  margin-bottom: .5rem;
 }
 
 button {
