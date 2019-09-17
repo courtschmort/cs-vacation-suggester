@@ -20,6 +20,63 @@
   </head>
   <body>
     <div class="container">
+
+      <div class="header">
+        <h1>Let's go on an adventure!</h1>
+        <p>Wanna get away, but unsure where to? Fill out our questionnaire below and let us be your travel guide!</p>
+      </div>
+
+      <form>
+
+        <div class="contact-information">
+          <h4>Your contact information:</h4>
+          <label for="firstName">Name</label>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="name" class="form-control" id="lastName" placeholder="First Name">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="name" class="form-control" id="lastName" placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="emailAddress">Email address</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="Email address">
+          </div>
+        </div>
+
+        <div class="travel-dates">
+          <h4>When would you like to travel?</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="depart-date">Depart date:</label>
+                    <input id="depart-date" class="form-control" type="date">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="return-date"><Return date:</label>
+                    <input id="return-date" class="form-control" type="date">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
     </div>
   </body>
 </html>
