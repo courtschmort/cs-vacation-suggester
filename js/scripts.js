@@ -19,47 +19,35 @@ $(document).ready(function() {
     let activityInput = $("input:radio[name=activity]:checked").val();
 
     if (climateInput === "tropical" && activityInput === "explore") {
-      $("#brazil").show();
-      $("#mexico").hide();
-      $("#spain").hide();
-      $("#canada").hide();
-      $("#antarctic-peninsula").hide();
-      $("#greenland").hide();
+      $("#central-america").show();
+      $("#caribbean").hide();
+      $("#europe").hide();
+      $("#north-america").hide();
+      $("#antarctica").hide();
     } else if (climateInput === "tropical" && activityInput === "relax") {
-      $("#brazil").hide();
-      $("#mexico").show();
-      $("#spain").hide();
-      $("#canada").hide();
-      $("#antarctic-peninsula").hide();
-      $("#greenland").hide();
+      $("#central-america").hide();
+      $("#caribbean").show();
+      $("#europe").hide();
+      $("#north-america").hide();
+      $("#antarctica").hide();
     } else if (climateInput === "temperate" && activityInput === "explore") {
-      $("#brazil").hide();
-      $("#mexico").hide();
-      $("#spain").show();
-      $("#canada").hide();
-      $("#antarctic-peninsula").hide();
-      $("#greenland").hide();
+      $("#central-america").hide();
+      $("#caribbean").hide();
+      $("#europe").show();
+      $("#north-america").hide();
+      $("#antarctica").hide();
     } else if (climateInput === "temperate" && activityInput === "relax") {
-      $("#brazil").hide();
-      $("#mexico").hide();
-      $("#spain").hide();
-      $("#canada").show();
-      $("#antarctic-peninsula").hide();
-      $("#greenland").hide();
-    } else if (climateInput === "polar" && activityInput === "explore") {
-      $("#brazil").hide();
-      $("#mexico").hide();
-      $("#spain").hide();
-      $("#canada").hide();
-      $("#antarctic-peninsula").show();
-      $("#greenland").hide();
-    } else if (climateInput === "polar" && activityInput === "relax") {
-      $("#brazil").hide();
-      $("#mexico").hide();
-      $("#spain").hide();
-      $("#canada").hide();
-      $("#antarctic-peninsula").hide();
-      $("#greenland").show();
+      $("#central-america").hide();
+      $("#caribbean").hide();
+      $("#europe").hide();
+      $("#north-america").show();
+      $("#antarctica").hide();
+    } else if (climateInput === "polar") {
+      $("#central-america").hide();
+      $("#caribbean").hide();
+      $("#europe").hide();
+      $("#north-america").hide();
+      $("#antarctica").show();
     }
 
     $("#results").show();
