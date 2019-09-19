@@ -18,13 +18,51 @@ $(document).ready(function() {
     let climateInput = $("#climate").val();
     let activityInput = $("input:radio[name=activity]:checked").val();
 
-    $("#results").show();
     if (climateInput === "tropical" && activityInput === "explore") {
-      $("#peru").show();
-      $("#bahamas").hide();
-    } else {
-      $("#results").hide();
+      $("#brazil").show();
+      $("#mexico").hide();
+      $("#spain").hide();
+      $("#canada").hide();
+      $("#antarctic-peninsula").hide();
+      $("#greenland").hide();
+    } else if (climateInput === "tropical" && activityInput === "relax") {
+      $("#brazil").hide();
+      $("#mexico").show();
+      $("#spain").hide();
+      $("#canada").hide();
+      $("#antarctic-peninsula").hide();
+      $("#greenland").hide();
+    } else if (climateInput === "temperate" && activityInput === "explore") {
+      $("#brazil").hide();
+      $("#mexico").hide();
+      $("#spain").show();
+      $("#canada").hide();
+      $("#antarctic-peninsula").hide();
+      $("#greenland").hide();
+    } else if (climateInput === "temperate" && activityInput === "relax") {
+      $("#brazil").hide();
+      $("#mexico").hide();
+      $("#spain").hide();
+      $("#canada").show();
+      $("#antarctic-peninsula").hide();
+      $("#greenland").hide();
+    } else if (climateInput === "polar" && activityInput === "explore") {
+      $("#brazil").hide();
+      $("#mexico").hide();
+      $("#spain").hide();
+      $("#canada").hide();
+      $("#antarctic-peninsula").show();
+      $("#greenland").hide();
+    } else if (climateInput === "polar" && activityInput === "relax") {
+      $("#brazil").hide();
+      $("#mexico").hide();
+      $("#spain").hide();
+      $("#canada").hide();
+      $("#antarctic-peninsula").hide();
+      $("#greenland").show();
     }
+
+    $("#results").show();
 
     let elmnt = document.getElementById("results");
     elmnt.scrollIntoView();

@@ -1,12 +1,6 @@
 body {
   padding-bottom: 2rem;
-  /* font-family: 'Open-Sans', sans-serif; */
 }
-
-/* h1 {
-  font-family: 'Caveat', cursive;
-  font-size: 4rem;
-} */
 
 button {
   margin: 1rem 0;
@@ -36,8 +30,3 @@ button {
   display: none;
   margin-top: 1rem;
 }
-
-/* .peru h4, .bahamas h4 {
-  font-family: 'Caveat', cursive;
-  font-size: 2rem;
-} */

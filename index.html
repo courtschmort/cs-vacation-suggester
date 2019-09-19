@@ -12,7 +12,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Google Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet"> -->
+
 
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -35,12 +35,12 @@
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input type="name" class="form-control" id="first-name" placeholder="First Name">
+                <input type="name" class="form-control" id="first-name" placeholder="First Name" required>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input type="name" class="form-control" id="last-name" placeholder="Last Name">
+                <input type="name" class="form-control" id="last-name" placeholder="Last Name" required>
               </div>
             </div>
           </div>
@@ -94,9 +94,7 @@
           <h4>What's your preferred climate?</h4>
           <select class="form-control" id="climate">
             <option value="tropical">Tropical</option>
-            <option value="dry">Dry</option>
-            <option value="mild">Mild</option>
-            <option value="continental">Continental</option>
+            <option value="temperate">Mild</option>
             <option value="polar">Polar</option>
           </select>
         </div>
@@ -124,26 +122,62 @@
       <div id="results">
         <p><em>Bon voyage</em>, <span class="first-name"></span> <span class="last-name"></span>! You should go to:</p>
 
-        <div id="peru">
-          <h4>Peru</h4>
-          <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Peru"> -->
+        <div id="brazil">
+          <h4>Brazil</h4>
+          <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Brazil"> -->
           <p>So, you want to <strong>explore</strong> in a <strong>tropical climate</strong>...</p>
           <blockquote class="blockquote">
-            <p class="mb-0">From the remoteness of Peru’s Andes Mountains to the unexplored territories of its Amazon rain forest, the country holds a mysticism all its own. It’s the motherland of the Inca civilization and home to Machu Picchu, alpaca products, and more than 4,000 types of native potatoes.</p>
+            <p class="mb-0">The wealth of flora and fauna and opportunities to observe them are unparalleled in the Amazon. Riverboats ply the waters of this fascinating wilderness, home to pink river dolphins, clamorous howler monkeys and raucous toucans. Photograph your adventure, run the rapids or stalk elusive jaguars by night.</p>
             <footer class="blockquote-footer"><cite title="Source Title">TripAdvisor</cite></footer>
           </blockquote>
-          <p><a href="https://www.tripadvisor.com/Home-g294311" target="_blank">Click here</a> to learn more about Peru!</p>
+          <p><a href="https://www.tripadvisor.com/Home-g294280" target="_blank">Click here</a> to learn more about Brazil!</p>
         </div>
 
-        <div id="bahamas">
-          <h4>Bahamas</h4>
-          <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Bahamas"> -->
+        <div id="mexico">
+          <h4>Mexico</h4>
+          <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Mexico"> -->
           <p>So, you want to <strong>relax</strong> in a <strong>tropical climate</strong>...</p>
           <blockquote class="blockquote">
-            <p class="mb-0">Like seashells, no two holidays in the Bahamas are alike. With options as diverse as its 700 islands, it's a place where you can find exactly the getaway you love most. Looking for a family destination, a place for lovers to ssneak away, a gambling mecca, a haven for cruise passengers, or a shopper’s world market? The Bahamas is all these… and much more.</p>
+            <p class="mb-0">With 26 UNESCO-declared world heritage sites, charming colonial towns and dozens of thrilling cities, there's plenty to explore in this country of 109 million. Outside the cities, stunning Pacific beaches, stark deserts, mangrove swamps and swimming holes provide all you need for a relaxing, romantic or adventurous vacation. Captivating, cosmopolitan and chaotic Mexico City and the 32 states offer an incredible abundance of experiences, from laid-back and leisurely to upbeat to adrenalin-charging.</p>
             <footer class="blockquote-footer"><cite title="Source Title">TripAdvisor</cite></footer>
           </blockquote>
-          <p><a href="https://www.tripadvisor.com/Home-g147414" target="_blank">Click here</a> to learn more about the Bahamas!</p>
+          <p><a href="https://www.tripadvisor.com/Home-g150768" target="_blank">Click here</a> to learn more about the Mexico!</p>
+        </div>
+
+        <div id="spain">
+          <h4>Spain</h4>
+          <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Spain"> -->
+          <p>So, you want to <strong>explore</strong> in a <strong>temperate climate</strong>...</p>
+          <blockquote class="blockquote">
+            <p class="mb-0">From sun-drenched archipelagos and bustling urban cities to snowcapped mountains and semi-arid deserts, Spain epitomizes geographical diversity. As the meeting point of the Atlantic Ocean and Mediterranean Sea, this vast country offers some of Europe’s most dramatic landscapes, as well as some of its tastiest cuisine.</p>
+            <footer class="blockquote-footer"><cite title="Source Title">TripAdvisor</cite></footer>
+          </blockquote>
+          <p><a href="https://www.tripadvisor.com/Home-g187427" target="_blank">Click here</a> to learn more about Spain!</p>
+        </div>
+
+        <div id="canada">
+          <h4>Canada</h4>
+          <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Canada"> -->
+          <p>So, you want to <strong>relax</strong> in a <strong>temperate climate</strong>...</p>
+          <blockquote class="blockquote">
+            <p class="mb-0">World class skiing, decadent European style cuisine, ornamental cathedrals, peaceful island life…Canada is a patchwork of thriving cities and majestic wilderness. Montreal beckons travelers with its French charm and booming cultural landscape. In Toronto, the Art Gallery of Ontario is a vision of Frank Gehry architecture and national artistic treasures. The gleaming mountain ranges of Banff set a stunning backdrop for an exploration of the Canadian Rockies.</p>
+            <footer class="blockquote-footer"><cite title="Source Title">TripAdvisor</cite></footer>
+          </blockquote>
+          <p><a href="https://www.tripadvisor.com/Home-g153339" target="_blank">Click here</a> to learn more about Canada!</p>
+        </div>
+
+        <div id="antarctic-peninsula">
+          <h4>Antarctic Peninsula</h4>
+          <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Antarctic Peninsula"> -->
+          <p>So, you want to <strong>explore</strong> in a <strong>polar climate</strong>...</p>
+          <p><a href="https://www.tripadvisor.com/Home-g660183" target="_blank">Click here</a> to learn more about the Antarctic Peninsula!</p>
+        </div>
+
+        <div id="greenland">
+          <h4>Greenland</h4>
+          <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Greenland"> -->
+          <p>So, you want to <strong>relax</strong> in a <strong>polar climate</strong>...</p>
+          <p><a href="https://www.tripadvisor.com/Home-g295111" target="_blank">Click here</a> to learn more about Greenland!</p>
         </div>
 
       </div>
