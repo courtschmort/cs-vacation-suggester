@@ -12,7 +12,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Google Fonts -->
-
+    <!-- <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet"> -->
 
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -23,7 +23,7 @@
     <div class="container">
 
       <div class="header">
-        <h1>Let's go on an adventure!</h1>
+        <h1>Let's go somewhere!</h1>
         <p>Wanna get away, but unsure where to? Fill out our questionnaire below and let us be your travel guide!</p>
       </div>
 
@@ -105,13 +105,13 @@
           <h4>Would you rather:</h4>
           <div class="radio">
             <label>
-              <input type="radio" name="activity" value="explore" checked>
+              <input type="radio" name="activity" value="explore" id="activity" checked>
               Explore
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="activity" value="relax">
+              <input type="radio" name="activity" value="relax" id="activity">
               Relax
             </label>
           </div>
@@ -123,6 +123,7 @@
 
       <div id="results">
         <p><em>Bon voyage</em>, <span class="first-name"></span> <span class="last-name"></span>! You should go to:</p>
+
         <div id="peru">
           <h4>Peru</h4>
           <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Peru"> -->
@@ -133,6 +134,7 @@
           </blockquote>
           <p><a href="https://www.tripadvisor.com/Home-g294311" target="_blank">Click here</a> to learn more about Peru!</p>
         </div>
+
         <div id="bahamas">
           <h4>Bahamas</h4>
           <!-- <img src="https://picsum.photos/400" class="img-fluid" alt="Bahamas"> -->
@@ -143,8 +145,10 @@
           </blockquote>
           <p><a href="https://www.tripadvisor.com/Home-g147414" target="_blank">Click here</a> to learn more about the Bahamas!</p>
         </div>
+
       </div>
 
     </div>
+
   </body>
 </html>

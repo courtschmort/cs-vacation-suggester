@@ -3,6 +3,15 @@ body {
   /* font-family: 'Open-Sans', sans-serif; */
 }
 
+/* h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+} */
+
+button {
+  margin: 1rem 0;
+}
+
 .header {
   margin: 2rem 0;
 }
@@ -15,7 +24,7 @@ body {
   margin-bottom: 1rem;
 }
 
-#climate {
+.climate {
   margin-bottom: 1rem;
 }
 
@@ -23,15 +32,12 @@ body {
   margin-bottom: .5rem;
 }
 
-button {
-  margin: 1rem 0;
-}
-
 #results {
   display: none;
   margin-top: 1rem;
 }
 
-.traveler {
-  display: none;
-}
+/* .peru h4, .bahamas h4 {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+} */
