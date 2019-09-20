@@ -1,13 +1,13 @@
 body {
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
-img {
-  margin-bottom: .5rem;
+button {
+  margin-top: .5rem;
 }
 
 .header {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .type {

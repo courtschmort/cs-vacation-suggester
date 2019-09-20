@@ -9,6 +9,15 @@ $(document).ready(function() {
     }
   });
 
+  $(".climate").change(function() {
+    let climate = $("#climate").val();
+    if (climate === "polar") {
+      $(".activity").hide();
+    } else {
+      $(".activity").show();
+    }
+  });
+
   $("form").submit(function(event) {
     let firstNameInput = $("input#first-name").val();
     let lastNameInput = $("input#last-name").val();
