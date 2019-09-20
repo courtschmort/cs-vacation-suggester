@@ -2,8 +2,8 @@ body {
   padding-bottom: 2rem;
 }
 
-button {
-  margin: 1rem 0;
+img {
+  margin-bottom: .5rem;
 }
 
 .header {
@@ -28,5 +28,5 @@ button {
 
 #results {
   display: none;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
