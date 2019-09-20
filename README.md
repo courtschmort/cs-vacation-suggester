@@ -12,7 +12,7 @@ This webpage suggests vacation destinations based on information submitted by us
 
 This webpage may be viewed on any web browser and edited by following the instructions below to clone or download the repository to your computer.
 
-###### Click [here](https://courtschmort.github.io/cs-vacation-suggester/) to open the GitHub Pages website.
+Click [here](https://courtschmort.github.io/cs-vacation-suggester/) to open the GitHub Pages website.
 
 ###### From GitHub
 1. Click the **Clone or download** dropdown button.
@@ -43,7 +43,7 @@ For more information about cloning repositories available on GitHub, click [here
 * JavaScript
 * jQuery
 
-#### License
+## License
 
 This website is licensed under the MIT license.
 
